@@ -1,2 +1,216 @@
 <!doctype html>
-<!-- Full site HTML content goes here (from the generated textdoc) -->
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Job Interativo — Oportunidades em Sorocaba e Região</title>
+  <meta name="description" content="Job Interativo — portal de vagas, estágio, trainee, jovem aprendiz e temporários em Sorocaba e região. Divulgação gratuita para candidatos e empresas.">
+  <link rel="icon" href="assets/favicon.png">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    :root{--brand:#0b63a6;--brand-dark:#074b7a;--muted:#6b7280;--bg:#f7fafc;--card:#ffffff}
+    *{box-sizing:border-box}
+    body{font-family:'Open Sans',system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial;line-height:1.5;margin:0;background:var(--bg);color:#0f1724}
+    header{background:linear-gradient(90deg,rgba(11,99,166,0.12),rgba(7,75,122,0.06));backdrop-filter:saturate(120%);position:sticky;top:0;z-index:60;border-bottom:1px solid rgba(15,23,36,0.04)}
+    .container{max-width:1100px;margin:0 auto;padding:0 20px}
+    nav{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
+    .brand{display:flex;align-items:center;gap:12px}
+    .brand img{height:46px}
+    .brand h1{font-family:'Montserrat';font-size:18px;margin:0;color:var(--brand-dark)}
+    .nav-links{display:flex;gap:18px;align-items:center}
+    .nav-links a{color:var(--brand-dark);text-decoration:none;font-weight:600}
+    .cta{display:inline-block;background:var(--brand);color:#fff;padding:10px 14px;border-radius:8px;text-decoration:none;font-weight:700}
+
+    .hero{padding:48px 0;display:grid;grid-template-columns:1fr 420px;gap:36px;align-items:center}
+    .hero h2{font-family:'Montserrat';font-size:32px;margin:0 0 12px}
+    .hero p{color:var(--muted);margin:0 0 18px}
+    .actions{display:flex;gap:10px;flex-wrap:wrap}
+    .btn{display:inline-flex;align-items:center;gap:10px;padding:12px 14px;border-radius:10px;text-decoration:none;font-weight:600}
+    .btn--primary{background:var(--brand);color:#fff}
+    .btn--outline{border:1px solid rgba(11,99,166,0.12);background:transparent;color:var(--brand-dark)}
+    .card{background:var(--card);padding:18px;border-radius:12px;box-shadow:0 6px 20px rgba(15,23,36,0.06)}
+
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:20px}
+    .feature h3{margin:0 0 8px;font-size:16px}
+    .feature p{margin:0;color:var(--muted);font-size:14px}
+
+    section{padding:34px 0}
+    .section-title{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:18px}
+    .list-vagas{display:grid;gap:12px}
+    .vaga{background:#fff;padding:12px;border-radius:10px;border:1px solid rgba(15,23,36,0.03)}
+
+    footer{padding:24px 0;background:linear-gradient(180deg,transparent,rgba(11,99,166,0.02));border-top:1px solid rgba(15,23,36,0.04)}
+    .footer-row{display:flex;justify-content:space-between;gap:20px;align-items:flex-start}
+    .small{font-size:13px;color:var(--muted)}
+
+    form{display:grid;gap:12px}
+    input[type=text],input[type=email],textarea{padding:10px;border-radius:8px;border:1px solid rgba(15,23,36,0.08);width:100%;font-family:inherit}
+    textarea{min-height:120px;resize:vertical}
+    .btn-submit{background:var(--brand);color:#fff;padding:12px;border-radius:8px;border:none;cursor:pointer}
+
+    @media (max-width:900px){.hero{grid-template-columns:1fr;}.grid{grid-template-columns:1fr}.nav-links{display:none}.brand h1{font-size:16px}}
+    @media (max-width:560px){.hero h2{font-size:24px}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <div class="brand">
+          <img src="assets/logo.png" alt="Job Interativo - logo">
+          <h1>Job Interativo</h1>
+        </div>
+        <div class="nav-links" aria-hidden>
+          <a href="#home" data-link>Home</a>
+          <a href="#candidatos" data-link>Candidatos</a>
+          <a href="#empresas" data-link>Empresas</a>
+          <a href="#contato" data-link>Contato</a>
+        </div>
+        <a class="cta" href="https://www.facebook.com/jobinterativo" target="_blank" rel="noopener">Facebook</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="home" class="hero">
+      <div>
+        <h2>Oportunidades e conteúdo para quem quer crescer no mercado de trabalho</h2>
+        <p>Job Interativo é um portal com o melhor conteúdo sobre mercado de trabalho, educação e ambiente corporativo. Divulgamos vagas efetivas, estágios, trainee, jovem aprendiz e temporários de Sorocaba e região.</p>
+        <div class="actions">
+          <a class="btn btn--primary" href="https://goo.gl/zjox9t" target="_blank" rel="noopener">🔍 Buscar Vagas</a>
+          <a class="btn btn--outline" href="https://goo.gl/JHRcB4" target="_blank" rel="noopener">📝 Cadastrar Currículo</a>
+          <a class="btn btn--outline" href="#empresas">🏢 Para Empresas</a>
+        </div>
+        <div class="card" style="margin-top:18px">
+          <strong>Atenção:</strong>
+          <p style="margin:8px 0 0;color:var(--muted);font-size:14px">Apenas divulgamos vagas — não nos responsabilizamos por processos seletivos ou contratações. Nosso objetivo é facilitar o encontro entre candidatos e oportunidades.</p>
+        </div>
+        <div style="margin-top:18px" class="grid" aria-hidden>
+          <div class="feature card">
+            <h3>Vagas de Sorocaba & Região</h3>
+            <p>Ofertas localizadas: efetivas, temporárias, estágio, trainee e jovem aprendiz.</p>
+          </div>
+          <div class="feature card">
+            <h3>Suporte à inserção</h3>
+            <p>Conteúdo e dicas para apoiar jovens buscando ingresso ao mercado de trabalho.</p>
+          </div>
+          <div class="feature card">
+            <h3>Captação ativa</h3>
+            <p>Vagas captadas em sites de emprego, agências, empresas e multinacionais.</p>
+          </div>
+        </div>
+      </div>
+      <aside>
+        <div class="card">
+          <h3 style="margin-top:0">Destaques</h3>
+          <div class="list-vagas" id="destaques">
+            <div class="vaga">
+              <strong>Assistente Administrativo</strong>
+              <div class="small">Sorocaba — Efetiva</div>
+            </div>
+            <div class="vaga">
+              <strong>Estágio em Marketing</strong>
+              <div class="small">Sorocaba — Estágio</div>
+            </div>
+            <div class="vaga">
+              <strong>Operador de Produção</strong>
+              <div class="small">Região — Temporário</div>
+            </div>
+            <div style="margin-top:8px;text-align:center">
+              <a class="btn btn--outline" href="https://goo.gl/zjox9t" target="_blank">Ver todas as vagas</a>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </section>
+
+    <section id="candidatos">
+      <div class="section-title">
+        <h2 style="margin:0">Para Candidatos</h2>
+        <div class="small">Candidaturas e currículos — grátis</div>
+      </div>
+      <div class="card">
+        <p>Busque vagas compatíveis com seu perfil e candidate-se gratuitamente. Também é possível cadastrar seu currículo no banco de dados do Job Interativo para que empresas parceiras encontrem você.</p>
+        <ul style="margin:12px 0">
+          <li>🔎 Buscar vagas: <a href="https://goo.gl/zjox9t" target="_blank">https://goo.gl/zjox9t</a></li>
+          <li>📄 Cadastrar currículo: <a href="https://goo.gl/JHRcB4" target="_blank">https://goo.gl/JHRcB4</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="empresas">
+      <div class="section-title">
+        <h2 style="margin:0">Para Empresas</h2>
+        <div class="small">Divulgação gratuita e destaque de marca</div>
+      </div>
+      <div class="card">
+        <p>Divulgue suas vagas gratuitamente ou faça um destaque de marca para alcançar o público ideal. Também divulgamos eventos como palestras, workshops, feiras e cursos.</p>
+        <ul style="margin:12px 0">
+          <li>📣 Divulgar vaga (grátis): <a href="https://goo.gl/YpnEiY" target="_blank">https://goo.gl/YpnEiY</a></li>
+          <li>⭐ Destaque de marca: <a href="https://goo.gl/MGwQNR" target="_blank">https://goo.gl/MGwQNR</a></li>
+          <li>📅 Divulgar evento: <a href="https://goo.gl/SdoQYX" target="_blank">https://goo.gl/SdoQYX</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contato">
+      <div class="section-title">
+        <h2 style="margin:0">Contato</h2>
+        <div class="small">Fale com a equipe online do Job Interativo</div>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 420px;gap:18px">
+        <div class="card">
+          <h3>Contato rápido</h3>
+          <p class="small">E-mail: <a href="mailto:contato@jobinterativo.com.br">contato@jobinterativo.com.br</a></p>
+          <p class="small">Site: <a href="https://www.jobinterativo.com.br" target="_blank">www.jobinterativo.com.br</a></p>
+          <p class="small">Facebook: <a href="https://www.facebook.com/jobinterativo" target="_blank">Job Interativo (Página Oficial)</a></p>
+          <hr style="margin:12px 0;border:none;border-top:1px solid rgba(15,23,36,0.04)">
+          <p style="margin:0;color:var(--muted)">Atenção: não intermediamos contratações — apenas divulgamos oportunidades.</p>
+        </div>
+        <aside class="card">
+          <h3>Envie uma mensagem</h3>
+          <form id="contactForm">
+            <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+            <input type="email" id="email" name="email" placeholder="Seu e-mail" required>
+            <input type="text" id="assunto" name="assunto" placeholder="Assunto">
+            <textarea id="mensagem" name="mensagem" placeholder="Mensagem" required></textarea>
+            <button type="submit" class="btn-submit">Enviar por e-mail</button>
+            <div id="formNotice" class="small" style="margin-top:8px;display:none"></div>
+          </form>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-row">
+        <div>
+          <div style="display:flex;align-items:center;gap:12px">
+            <img src="assets/logo.png" alt="logo" style="height:40px">
+            <div>
+              <div style="font-weight:700">Job Interativo</div>
+              <div class="small">Portal de vagas — Sorocaba e Região</div>
+            </div>
+          </div>
+        </div>
+        <div class="small" style="text-align:right">
+          <div>contato@jobinterativo.com.br</div>
+          <div style="margin-top:8px">© <span id="year"></span> Job Interativo. Todos os direitos reservados.</div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    document.querySelectorAll('[data-link]').forEach(a=>{
+      a.addEventListener('click', e=>{
+        e.preventDefault();
+        const id = a.getAttribute('href').slice(1);
+        document.getElementById(id).scrollIntoView({behavior:'smooth',block:'start'});
+      })
+    });
+    const form = document.getElementById('contactForm
+
